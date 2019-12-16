@@ -16,7 +16,7 @@ function [ var_strike, calc_table, contributions ] = calc_var_strike_from_option
         error('need to pass in strictly increasing set of strikes.');
     end
     
-    % calculatem mid quotes
+    % calculate mid quotes
     opt_set.c_mid       = mean([ opt_set.c_bid, opt_set.c_ask] , 2);
     opt_set.p_mid       = mean([ opt_set.p_bid, opt_set.p_ask] , 2);
     
